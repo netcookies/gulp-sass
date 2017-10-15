@@ -178,7 +178,7 @@ gulpSass.sync = function sync(options) {
 gulpSass.logError = function logError(error) {
   var message = new gutil.PluginError('sass', error.messageFormatted).toString();
   process.stderr.write(message + '\n');
-  this.emit('end');
+  //this.emit('end');
 };
 
 //////////////////////////////
